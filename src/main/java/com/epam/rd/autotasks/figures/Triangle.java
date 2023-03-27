@@ -45,4 +45,11 @@ class Triangle extends Figure{
     public String toString() {
         return "Triangle ["+pointsToString()+"]";
     }
+
+    @Override
+    public Point leftmostPoint() {
+        double leftmostX = min( min(a.getX(),b.getX()), min(a.getX(),c.getX()));
+        double leftmostY = min( min(a.getY(),b.getY()), min(a.getY(),c.getY()));
+        return new Point(leftmostX,leftmostY);
+    }
 }
