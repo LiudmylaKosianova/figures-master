@@ -43,7 +43,7 @@ class Triangle extends Figure{
      */
     @Override
     public String toString() {
-        return "Triangle ["+pointsToString()+"]";
+        return "Triangle["+pointsToString()+"]";
     }
 
     @Override
